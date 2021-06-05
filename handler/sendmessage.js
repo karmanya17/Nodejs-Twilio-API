@@ -1,4 +1,4 @@
-const client=require("twilio")('ACa9b5a30ff2f862cc435c8f78cad8a7f9','b9f12199c12a713cbe185ea56500684d');
+const client=require("twilio")('API key','password');
 const sendmessage=function(req,res){
   console.log(req.body);
   const mobile="+91"+req.body.mobile;
