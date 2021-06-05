@@ -11,18 +11,6 @@ app.use("/",express.static(path.join(__dirname,"public")));
 
 app.use("/message",route);
 
-// const sslServer= https.createServer(
-//   {
-//   key:fs.readFileSync(path.join(__dirname,'certificate','key.pem')),
-//   certificate:fs.readFileSync(path.join(__dirname,"certificate","certificate.pem")),
-//
-// },
-// app
-// )
-// sslServer.listen(3000,function(){
-//   console.log("Secure Server");
-// })
-
 app.listen("3000",function(req,res){
   console.log("server is up at 3000");
 })
