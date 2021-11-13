@@ -1,6 +1,6 @@
 const client=require("twilio")('API key','password');
 const sendmessage=function(req,res){
-  console.log(req.body);
+ // console.log(req.body);
   const mobile="+91"+req.body.mobile;
   const message=req.body.message;
   console.log(mobile);
